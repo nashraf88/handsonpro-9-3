@@ -13,7 +13,7 @@
         if (document.getElementById("rememberinput").checked) {
         document.cookie = "username=" + document.getElementById("usernameinput").value;
         } else {
-          var expiresDate = newDate ();
+          var expiresDate = new Date ();
           expiresDate.setDate(expiresDate.getDate () - 7);
           document.cookie = "username=null; expires=" + expiresDate.toUTCString();
         }
